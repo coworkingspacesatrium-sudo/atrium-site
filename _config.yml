@@ -1,0 +1,6 @@
+title: ATRIUM CO-WORKING LUXURY
+email: coworkingspacesatrium@gmail.com
+baseurl: "" # leave blank for user.github.io/repo
+url: "https://<your-github-username>.github.io" # update after repo setup
+theme: minima
+plugins: []
