@@ -17,3 +17,14 @@
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
+---
+# simple page layout that uses the default layout
+---
+{% layout none %}
+{% include header.html %}
+<main class="container">
+  <article class="page-content">
+    {{ content }}
+  </article>
+</main>
+{% include footer.html %}
