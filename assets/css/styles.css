@@ -1,0 +1,38 @@
+:root{
+  --navy:#062A4A;
+  --white:#ffffff;
+  --coral:#FF6B6B;
+  --muted:#6b7280;
+  --container:1100px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:#0b2540;background:var(--white);line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.site-header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+.logo{height:44px}
+.tagline{font-size:12px;color:#dbeafe}
+.nav a{color:var(--white);margin:0 10px;text-decoration:none}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none}
+.btn.primary{background:var(--coral);color:var(--white)}
+.btn.outline{border:2px solid var(--coral);color:var(--navy);background:transparent}
+.hero{position:relative;color:var(--white);min-height:56vh;display:flex;align-items:center}
+.hero-media{position:absolute;inset:0;overflow:hidden}
+.hero-video, .hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(0.45)}
+.hero-content{position:relative;z-index:2;padding:48px}
+.hero h1{font-size:2.6rem;margin:0 0 8px}
+.lead{font-size:1.2rem;margin:0 0 12px;color:#fff}
+.amenities{padding:40px 0;background:#f8fafc;border-top:1px solid #e6eef6}
+.amenities h2{margin-top:0}
+.quick-info .cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06);flex:1}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.site-footer{background:#021826;color:#fff;padding:20px;position:relative}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;background:transparent;border-radius:50%;z-index:100}
+.whatsapp-float img{width:56px;height:56px}
+@media (max-width:800px){
+  .header-inner{flex-direction:column;gap:8px}
+  .hero h1{font-size:1.8rem}
+}
