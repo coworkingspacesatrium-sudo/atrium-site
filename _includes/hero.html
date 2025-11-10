@@ -1,0 +1,19 @@
+<section class="hero">
+  <div class="hero-media">
+    <!-- Video hero (muted autoplay loop) -->
+    <video class="hero-video" autoplay muted loop playsinline poster="{{ '/assets/images/photo1.jpg' | relative_url }}">
+      <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4">
+      <!-- fallback : static background -->
+      <img src="{{ '/assets/images/photo1.jpg' | relative_url }}" alt="Atrium coworking">
+    </video>
+  </div>
+  <div class="hero-content container">
+    <h1>ATRIUM CO-WORKING LUXURY</h1>
+    <p class="lead">Your workspace, Your Way!</p>
+    <p class="short-desc">A vibrant, premium co-working in HSR Layout — flexible desks, private cabins, meeting rooms and virtual office services for startups and professionals.</p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="https://calendly.com/coworkingspacesatrium" target="_blank" rel="noopener">Book a Tour</a>
+      <a class="btn outline" href="{{ '/pricing' | relative_url }}">View Plans</a>
+    </div>
+  </div>
+</section>
